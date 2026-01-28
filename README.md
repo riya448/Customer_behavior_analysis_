@@ -1,43 +1,35 @@
-Customer Shopping Behavior Analysis
+# Customer Shopping Behavior Analysis
 
-Overview
-This end-to-end data analytics project examines 3,900 transactions to identify patterns in customer spending, demographics, and subscription behavior. The project bridges the gap between raw data and strategic decision-making by utilizing a full data stack—Python for data engineering, SQL for deep-dive analysis, and Power BI for executive-level visualization.
+## Overview
+[cite_start]This project analyzes customer shopping behavior using transactional data from **3,900 purchases**[cite: 3]. [cite_start]The goal is to uncover insights into spending patterns, customer segments, and subscription behavior to guide strategic business decisions[cite: 4].
 
-Dataset
-The dataset consists of 3,900 rows and 18 columns focusing on retail consumer behavior.
-  .Customer Demographics: Age, Gender, Location, and Subscription Status.
-  .Purchase Details: Item Category, Purchase Amount, Size, and Color.
-  .Behavioral Data: Review Ratings, Discount usage, and Frequency of Purchases.
+## Dataset
+[cite_start]The dataset contains **3,900 rows and 18 columns**[cite: 6, 7].
+* [cite_start]**Demographics:** Age, Gender, Location, and Subscription Status[cite: 9].
+* [cite_start]**Purchase Details:** Item Purchased, Category, Amount, Season, Size, and Color[cite: 10].
+* [cite_start]**Behavioral Data:** Review Ratings, Shipping Type, and Purchase Frequency[cite: 11].
+* [cite_start]**Data Quality:** Handled 37 missing values in the Review Rating column[cite: 12].
 
-Tools & Technologies
-  .Python (Pandas/NumPy): Data cleaning, missing value imputation, and feature engineering.
-  .SQL (PostgreSQL): Advanced querying for business metrics and customer segmentation.
-  .Power BI: Interactive dashboarding and data storytelling.
-  .Gamma: AI-powered presentation generation for stakeholder reporting.
-  .PDF/Markdown: Technical documentation and project reporting.
+## Tools & Technologies
+* [cite_start]**Python (Pandas):** Data cleaning and exploratory data analysis[cite: 13, 15].
+* [cite_start]**PostgreSQL:** Structured analysis to answer business-critical questions[cite: 26, 27].
+* [cite_start]**Power BI:** Interactive dashboarding for visual insights[cite: 62, 63].
+* **Gamma:** Presentation generation for stakeholder reporting.
 
-Project Steps
-  1.Data Cleaning (Python): Handled 37 missing values in "Review Rating" using median imputation     and standardized column names to snake_case.
-  2.Feature Engineering: Created age_group bins and purchase_frequency_days for more granular        analysis.
-  3.SQL Integration: Cleaned data was loaded into a PostgreSQL database to run complex queries       regarding revenue by gender and product popularity.
-  4.Analysis: Segmented customers into New, Returning, and Loyal groups based on their purchase      history.
-  5.Visualization: Designed a Power BI dashboard to track KPIs like average purchase amount and      sales by category.
-  6.Presentation: Summarized findings into a professional PPT deck using Gamma to provide            actionable business recommendations.
+## Project Steps
+1.  [cite_start]**EDA & Cleaning:** Loaded data in Python, performed initial exploration, and handled missing values using category medians[cite: 15, 16, 19].
+2.  [cite_start]**Feature Engineering:** Created `age_group` bins and standardized columns to snake_case[cite: 20, 22].
+3.  [cite_start]**Database Integration:** Connected Python to **PostgreSQL** to load the cleaned data[cite: 25].
+4.  [cite_start]**SQL Analysis:** Queried metrics such as revenue by gender, top-rated products, and shipping comparisons[cite: 28, 42, 44].
+5.  [cite_start]**Visualization:** Built a Power BI dashboard showing that **27%** of customers are subscribers[cite: 77, 80].
 
-Dashboard
-The interactive Power BI dashboard provides a high-level view of:
-  .Key Metrics: Total customers (3.9K), average purchase amount ($59.76), and average rating (3.75).
-  .Customer Segments: Breakdown of subscribers (27%) vs. non-subscribers (73%).
-  .Category Performance: Revenue and sales volume for Accessories, Clothing, Footwear, and          Outerwear.
-  
-Key Results & Insights
-  .Top Revenue Driver: The "Young Adult" age group contributed the highest revenue at $62,143.
-  .Customer Loyalty: The majority of the customer base (3,116) falls into the "Loyal" segment.
-  .Gender Spend: Male customers accounted for $157,890 in revenue compared to $75,191 from          female customers.
-  .Recommendation: Focus on "Discount-Dependent Products" like Hats and Sneakers, which have the    highest discount rates (up to 50%).
+## Results & Insights
+* [cite_start]**Revenue by Gender:** Male customers generated **$157,890**, while female customers generated **$75,191**[cite: 34, 37].
+* [cite_start]**Customer Segments:** Identified **3,116 Loyal customers**, 701 Returning, and 83 New customers[cite: 54].
+* [cite_start]**Product Performance:** "Gloves" achieved the highest average rating of **3.86**[cite: 43].
+* [cite_start]**Age Demographics:** The **Young Adult** group contributed the highest total revenue at **$62,143**[cite: 61].
 
-How to Run
-  1.Python: Run cleaning_script.py to process the raw CSV and generate the cleaned dataset.
-  2.SQL: Import the cleaned CSV into your PostgreSQL server and execute queries.sql to view          business insights.
-  3.Power BI: Open the .pbix file to interact with the visual dashboard.
-  4.Presentation: Access the project summary via the Gamma link provided in the reports/ folder.
+## How to Run
+1.  **Data Processing:** Run the Python script to clean the raw data and generate the SQL-ready file.
+2.  **Database Setup:** Execute the SQL scripts in a PostgreSQL environment to recreate the analysis tables.
+3.  **Dashboard:** Open the `.pbix` file in Power BI Desktop to view the interactive visualizations.
