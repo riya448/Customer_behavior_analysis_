@@ -1,10 +1,10 @@
 # Customer Shopping Behavior Analysis
 
 ## Overview
-[cite_start]This project analyzes customer shopping behavior using transactional data from **3,900 purchases**[cite: 3]. [cite_start]The goal is to uncover insights into spending patterns, customer segments, and subscription behavior to guide strategic business decisions[cite: 4].
+This project analyzes customer shopping behavior using transactional data from **3,900 purchases**[cite: 3]. [cite_start]The goal is to uncover insights into spending patterns, customer segments, and subscription behavior to guide strategic business decisions[cite: 4].
 
 ## Dataset
-[cite_start]The dataset contains **3,900 rows and 18 columns**[cite: 6, 7].
+The dataset contains **3,900 rows and 18 columns**[cite: 6, 7].
 * [cite_start]**Demographics:** Age, Gender, Location, and Subscription Status[cite: 9].
 * [cite_start]**Purchase Details:** Item Purchased, Category, Amount, Season, Size, and Color[cite: 10].
 * [cite_start]**Behavioral Data:** Review Ratings, Shipping Type, and Purchase Frequency[cite: 11].
